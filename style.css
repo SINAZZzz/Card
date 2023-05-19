@@ -1,5 +1,141 @@
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
+    /* background: linear-gradient(to top left , #c06565 , #f6ff00); */
+    background: black;
+    height: 100vh;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.Containar{
+    margin-top: 20px;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    background: black;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 5px #9c2929;
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+    /* animation-name: changeboxshadowcolor;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes changeboxshadowcolor {
+    0%{
+        box-shadow: 0px 5px 10px 10px #9c2929;
+    }
+    20%{
+        box-shadow: 0px 5px 10px 10px #299c51;
+    }
+    40%{
+        box-shadow: 0px 5px 10px 10px #29749c;
+    }
+    60%{
+        box-shadow: 0px 5px 10px 10px #9c298b;
+    }
+    80%{
+        box-shadow: 0px 5px 10px 10px #9c8729;
+    }
+    100%{
+        box-shadow: 0px 5px 10px 10px #293c9c;
+    }
+}
+
+.Head{
+    border-radius: 0rem 0rem 1rem 1rem;
+    position: relative;
+    width: 20rem;
+    height: 6rem;
+    background: #2fc2cabc;
+    animation-name: changebackground;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.Card-img{
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    display: block;
+    margin-top: -50px;
+
+    /* border: 5px solid white;
+    border-radius: 50px;
+    animation-name: changebordercolor;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes changebordercolor {
+    0%{
+        border: 5px solid red;
+    }
+    20%{
+        border: 5px solid yellow;
+    }
+    40%{
+        border: 5px solid blue;
+    }
+    60%{
+        border: 5px solid rgb(64, 255, 0);
+    }
+    80%{
+        border: 5px solid rgb(255, 0, 195);
+    }
+    100%{
+        border: 5px solid rgb(230, 0, 255);
+    }
+}
+
+@keyframes changebackground {
+    0%{
+        background: red;
+    }
+    20%{
+        background: rgb(195, 255, 0);
+    }
+    40%{
+        background: rgb(34, 255, 0);
+    }
+    60%{
+        background: rgb(0, 255, 200);
+    }
+    80%{
+        background: rgb(0, 30, 255);
+    }
+    100%{
+        background: rgb(83, 16, 199);
+    }
+}
+
+.Title{
+    margin-top: 10px;
+}
+
+.Description{
+    margin: 10px 10px 0px 40px ;
+    font-size: 1rem;
 }
